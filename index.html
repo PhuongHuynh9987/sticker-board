@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> <!--These are for font awesome-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">                        <!--These are for font awesome-->
+    <link rel="stylesheet" href = 'style.css'>
+    <title>Sticker-Board</title>
+</head>
+
+<body ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    <!-- For each note -->
+    <div class="sticky_note" id = 'sticky_note' draggable="true" ondragstart="drag(event)">
+        <!-- Top of the Note -->
+        <div class="top">
+            <i class="fas fa fa-times"></i>
+        </div>
+
+        <div class="note-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, incidunt perferendis! Repudiandae quas praesentium enim voluptas officia quo tempore, eveniet dolor ipsa! Fugit, amet molestiae quasi quo neque facere voluptatem.</p>
+        </div>
+
+        <!-- Content of Note -->
+    </div>
+
+    <div class = 'addNoteBtn' id = 'addNoteBtn' >
+        <button>Add Node</button>
+    </div>
+
+    <script href = 'js.js'></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url('/bg2.jpg'); */
+    /* background-size: cover; */
+}
+
+/* styling a sticky note*/
+.top {
+    background-color: rgb(224, 131, 213);
+}
+
+.fas {
+    display:flex;
+    justify-content:right;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
+
+.sticky_note {
+    width: 16rem;
+}
+
+.note-content{
+    background-color: rgb(243, 203, 239);
+}
+
+p{
+    padding: 2rem;
+}
+
+/* add note button */
+.addNoteBtn {
+    position:fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+button {
+    width: 6rem;
+    height: 3rem;
+    border-radius: 10px;
+    box-shadow: 0.3rem 0.3rem 0rem rgba(0,0,0,0.3);
+    background-color: rgb(190, 204, 233);
+    border-style: hidden;
+}
+
+button:active {
+    transform:translateY(10px);
+}
