@@ -5,11 +5,33 @@
 }
 
 body {
+    min-height: 100vh;
     /* background-image: url('/bg2.jpg'); */
     /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background: radial-gradient(rgb(34, 122, 83),rgb(3,4,4) );
+    box-shadow: 0rem 2rem 4rem 1.2rem rgba(0,0,0,0.5);
+    width: 90%;
+    height: 90vh;
+
 }
 
 /* styling a sticky note*/
+
+#sticky_note {
+    position:absolute;
+    width: 15rem;
+    height: 30%;
+    z-index: 9;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
 .top {
     background-color: rgb(224, 131, 213);
 }
@@ -21,16 +43,14 @@ body {
     padding: 0.3rem;
 }
 
-.sticky_note {
-    width: 16rem;
-}
 
 .note-content{
     background-color: rgb(243, 203, 239);
 }
 
 p{
-    padding: 2rem;
+    padding: 10%;
+    font-size: 50%;
 }
 
 /* add note button */

@@ -10,28 +10,31 @@
     <title>Sticker-Board</title>
 </head>
 
-<body ondrop="drop(event)" ondragover="allowDrop(event)">
+<body >
+    <div id = 'board' >
+        <!-- For each note -->
+        <div id="sticky_note">
+            <!-- Top of the Note -->
+            <div class="top">
+                <i class="fas fa fa-times"></i>
+            </div>
 
-    <!-- For each note -->
-    <div class="sticky_note" id = 'sticky_note' draggable="true" ondragstart="drag(event)">
-        <!-- Top of the Note -->
-        <div class="top">
-            <i class="fas fa fa-times"></i>
+            <div class="note-content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, incidunt perferendis! Repudiandae quas praesentium enim voluptas officia quo tempore, eveniet dolor ipsa! Fugit, amet molestiae quasi quo neque facere voluptatem.</p>
+            </div>
+
+            <!-- Content of Note -->
         </div>
 
-        <div class="note-content">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, incidunt perferendis! Repudiandae quas praesentium enim voluptas officia quo tempore, eveniet dolor ipsa! Fugit, amet molestiae quasi quo neque facere voluptatem.</p>
+        <div class = 'addNoteBtn' id = 'addNoteBtn' >
+            <button>Add Node</button>
         </div>
 
-        <!-- Content of Note -->
     </div>
 
-    <div class = 'addNoteBtn' id = 'addNoteBtn' >
-        <button>Add Node</button>
-    </div>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script type="text/javascript"  src = 'js.js'></script>
 
-    <script href = 'js.js'></script>
-
-    
 </body>
 </html>
